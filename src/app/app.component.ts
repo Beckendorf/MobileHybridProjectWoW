@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import firebase from 'firebase';
 
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -15,11 +16,10 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     this.zone = new NgZone({});
     const config = {
-      apiKey: "AIzaSyDKmmMOcvAnwdcGY4wIFX0hr4KxNewy1P4",
-      authDomain: "myapp-ea250.firebaseapp.com",
-      databaseURL: "https://myapp-ea250.firebaseio.com/",
-      storageBucket: "gs://myapp-ea250.appspot.com/",
-      messagingSenderId: "847136047094 "
+      apiKey: "AIzaSyD6OdK4V3W11Y2Iu427PW9FK83hRiVCyNQ ",
+      authDomain: "wowmobile-b69ba.firebaseapp.com ",
+      databaseURL: "https://wowmobile-b69ba.firebaseio.com/",
+      messagingSenderId: "1068893161403 "
     };
     firebase.initializeApp(config);
 
