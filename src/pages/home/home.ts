@@ -21,42 +21,37 @@ export class HomePage {
 	}
 		
 
+
 		ionViewDidLoad()
 		{
-
-var BreakException = {};
 
 			this.itemRef.on('value', itemSnapshot => { 
 			this.items = [];
 			itemSnapshot.forEach( itemSnap => {
 				var string =  itemSnap.val().nom + ' (' + itemSnap.val().region +  ' - ' + itemSnap.val().server + ') ' + itemSnap.val().classe + ' ' + itemSnap.val().spe + ' - Level : ' + itemSnap.val().level;
 				this.items.push(string);
-var i = 0;
-try {
-				itemSnap.forEach( snapo => {
-
-				var string2 = ' ----- ' + snapo.val();
-					this.items.push(string2);
-					i++;
-					if (i == 15)  throw BreakException;
-					
-				});
-
-		} catch (e) {
-  			if (e !== BreakException) throw e;
-		}
-		
-			
+				
+			this.items.push(' ---- ' + itemSnap.val()._head);
+			this.items.push(' ---- ' + itemSnap.val()._neck);
+			this.items.push(' ---- ' + itemSnap.val()._shoulder);
+			this.items.push(' ---- ' + itemSnap.val()._back);
+			this.items.push(' ---- ' + itemSnap.val()._chest);
+			this.items.push(' ---- ' + itemSnap.val()._wrists);
+			this.items.push(' ---- ' + itemSnap.val()._hands);
+			this.items.push(' ---- ' + itemSnap.val()._waist);
+			this.items.push(' ---- ' + itemSnap.val()._legs);
+			this.items.push(' ---- ' + itemSnap.val()._feet);
+			this.items.push(' ---- ' + itemSnap.val()._ring1);
+			this.items.push(' ---- ' + itemSnap.val()._ring2);
+			this.items.push(' ---- ' + itemSnap.val()._trinket1);
+			this.items.push(' ---- ' + itemSnap.val()._trinket2);
+			this.items.push(' ---- ' + itemSnap.val()._mainhand);
+			this.items.push(' ---- ' + itemSnap.val()._offhand);
 			return false;
 			}); 
-
 		});
-		}
+}
 
-	info()
-	{
-		
-    }
 
 	addItem(server: string, name : string): void {
 	var nUp = 'eu-' + server + '-' + name;

@@ -14,6 +14,9 @@
 			<ion-input type="text" placeholder="Server" [(ngModel)]="server"></ion-input>
 		</ion-item>
 	</ion-list>
+	<button ion-button color="positive" block (click)="addItem(server, name)">
+		Add character
+	</button>
 
 	<ion-label color="primary" stacked>List</ion-label>
 	<ion-list>
@@ -23,10 +26,6 @@
 			<button color="primary" (click)="removeItem()">Remove</button> -->
 		</ion-item>
 	</ion-list>
-	
-	<button ion-button color="positive" block (click)="addItem(server, name)">
-		Add character
-	</button>
 	
 	<button ion-button color="positive" block (click)="logMeOut()">
 		Log Out
