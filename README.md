@@ -45,7 +45,7 @@ Application lié au jeu vidéo World of Warcraft permettant de charger un person
 
 *Finalement, avec tout ces problèmes rencontrés, nous nous sommes assez éloignés de notre premier but.*
 
-### Exemple de personnages pour les tests (Serveur - Nom de personnage)###
+### Exemple de personnages pour les tests (Serveur - Nom de personnage) ###
 Hyjal - Magnûm
 
 Hyjal - Flayed
@@ -60,7 +60,7 @@ Ysondre - Mojowar
 
 *(Pleins d'autres exemples existent avec d'autres serveurs, cependant cela peut être très long à rechercher)*
 
-### Membres du groupe###
+### Membres du groupe ###
 
 *Arthur Chassot*
 
