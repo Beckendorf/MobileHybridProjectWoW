@@ -21,7 +21,11 @@ Application lié au jeu vidéo World of Warcraft permettant de charger un person
 
 - Une GoogleSheet vérifie la base de données Firebase afin d'identifier les nouveaux personnages ajoutés. Dès qu'elle récupère un nouveau personnage, elle fait appel à l'API Blizzard afin de récupérer les données liées aux personnages et les traites.
 
-*Firebase est limité à une adresse mail pour le partage et sera partagé à l'examinateur.*
+*Firebase ne sera partagé qu'à l'examinateur :*
+*[https://console.firebase.google.com/u/0/project/wowmobile-b69ba/overview ](https://console.firebase.google.com/u/0/project/wowmobile-b69ba/overview)*
+
+*Voici le lien du GoogleSheet (créez une copie pour avoir accès aux scripts) :*
+*[https://docs.google.com/spreadsheets/d/1XRdglyWNnSvhjb-q-E_hKh69Aok4lk2dbCxrlWYQFmw/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1XRdglyWNnSvhjb-q-E_hKh69Aok4lk2dbCxrlWYQFmw/edit?usp=sharing "GoogleSheet")*
 
 ### Problèmes rencontrés ###
 
